@@ -55,7 +55,7 @@ a {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.7);
 	height: 100%;
 	width: 100%;
 	z-index: 101;
@@ -217,6 +217,7 @@ header {
 			display: block !important;
 		}
 		.mobile-menu {
+			padding-top: 4rem;
 			display: block;
 			position: fixed;
 			top: 0;
@@ -240,7 +241,7 @@ header {
 				right: 2rem;
 				cursor: pointer;
 				ion-icon {
-					font-size: 2.5rem;
+					font-size: 3rem;
 				}
 			}
 			.login {
@@ -399,9 +400,13 @@ header {
 					color: #2d2d2d;
 					font-weight: 700;
 					transition: 0.2s;
-					border-bottom: 1px solid #2d2d2d;
+					// border-bottom: 1px solid #2d2d2d;
 					text-decoration: none;
-
+					&::after {
+						content: "";
+						display: block;
+						border-bottom: 1px solid #2d2d2d;
+					}
 					&:hover {
 						border-bottom: 1px solid #23d3d3;
 						color: #23d3d3;
